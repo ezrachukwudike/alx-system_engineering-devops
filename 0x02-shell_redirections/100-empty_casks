@@ -1,2 +1,2 @@
 #!/bin/bash
-find . ls -la -type f -empty -print
+find ~/lists -empty -printf '%y %p\n'
