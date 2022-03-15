@@ -1,2 +1,2 @@
 #!/bin/bash
-find ~/lists -empty -printf '%y %p\n'
+find -type f -name "*.gif" print "%f\n" | rev | cut -d '.' -f 2- | rev | LC_ALL=C sort -f
